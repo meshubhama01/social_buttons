@@ -1,0 +1,23 @@
+name: social_buttons
+description: A simple flutter package to add social meda links easily to any flutter app. 
+version: 0.0.1
+author: Shubham Kumar
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  font_awesome_flutter: ^8.10.0
+  url_launcher: ^5.7.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
