@@ -1,14 +1,52 @@
 # social_buttons
 
-A simple flutter package to add social meda links easily to any flutter app. 
+A simple flutter package to add social media links easily to any flutter app. 
 
-## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Simple Usage
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+#### Creating a basic `SocialButtons Group`
+
+    
+ class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+      ),
+      home: Scaffold(
+        body: Container(
+          color: Colors.white,
+          child: Center(
+            child: SocialButtonsWidget(
+              items: [
+                SocialButtonItem(
+                    socialItem: socialItems.twitter,
+                    itemColor: Colors.blue[400],
+                    itemSize: 30.0,
+                    url: "https://www.google.com/"),
+                SocialButtonItem(
+                    socialItem: socialItems.instagram,
+                    itemColor: Colors.pink[800],
+                    itemSize: 30.0,
+                    url: "https://www.google.com/"),
+                SocialButtonItem(
+                    socialItem: socialItems.facebook,
+                    itemColor: Colors.blue[900],
+                    itemSize: 30.0,
+                    url: "https://www.google.com/"),
+                SocialButtonItem(
+                    socialItem: socialItems.snapchat,
+                    itemColor: Colors.yellow[700],
+                    itemSize: 30.0,
+                    url: "https://www.google.com/")
+              ],
+            ),
+          ),
+        ),
+      ),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}

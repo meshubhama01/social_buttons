@@ -1,8 +1,8 @@
 name: social_buttons
-description: A simple flutter package to add social meda links easily to any flutter app. 
+description: A simple flutter package to add social media links easily to any flutter app. 
 version: 0.0.1
-author: Shubham Kumar
-homepage:
+# author: Shubham Kumar
+homepage: https://github.com/meshubhama01/social_buttons
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
