@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:social_buttons/enums.dart';
+import 'package:social_buttons/src/enums.dart';
+
 
 class SocialButtonItem {
   final String labelText;
@@ -10,8 +11,8 @@ class SocialButtonItem {
 
   SocialButtonItem(
       {this.labelText,
-        @required this.socialItem,
-        @required this.url,
-        this.itemColor,
-        this.itemSize});
+      @required this.socialItem,
+      @required this.url,
+      this.itemColor,
+      this.itemSize});
 }

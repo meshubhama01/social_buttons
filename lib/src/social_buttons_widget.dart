@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:social_buttons/enums.dart';
-import 'package:social_buttons/social_button_item.dart';
+import 'package:social_buttons/src/social_button_item.dart';
+import 'enums.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-
 
 class SocialButtons extends StatefulWidget {
   final List<SocialButtonItem> items;
@@ -82,29 +80,25 @@ class _AnimatingItemState extends State<AnimatingItem> {
         size: widget.sbi.itemSize,
         color: widget.sbi.itemColor,
       );
-    }
-    else if (widget.sbi.socialItem == socialItems.github) {
+    } else if (widget.sbi.socialItem == socialItems.github) {
       _child = FaIcon(
         FontAwesomeIcons.github,
         size: widget.sbi.itemSize,
         color: widget.sbi.itemColor,
       );
-    }
-    else if (widget.sbi.socialItem == socialItems.snapchat) {
+    } else if (widget.sbi.socialItem == socialItems.snapchat) {
       _child = FaIcon(
         FontAwesomeIcons.snapchat,
         size: widget.sbi.itemSize,
         color: widget.sbi.itemColor,
       );
-    }
-    else if (widget.sbi.socialItem == socialItems.website) {
+    } else if (widget.sbi.socialItem == socialItems.website) {
       _child = FaIcon(
         FontAwesomeIcons.internetExplorer,
         size: widget.sbi.itemSize,
         color: widget.sbi.itemColor,
       );
     }
-
 
     return Container(
       child: Container(

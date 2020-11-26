@@ -19,7 +19,7 @@ A simple flutter package to add social media links easily to any flutter app.
                     body: Container(
                     color: Colors.white,
                     child: Center(
-                        child: SocialButtonsWidget(
+                        child: SocialButtons(
                         items: [
                             SocialButtonItem(
                                 socialItem: socialItems.twitter,
